@@ -1,0 +1,58 @@
+.section1 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../image/section1/bak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.section2,
+.section4,
+.section5 {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section3 {
+    padding-bottom: 94px;
+}
+
+.section4 {
+    background-color: #F5F4FA;
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.detailes__item {
+    width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.aktions__item {
+    position: relative;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.command__item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.command-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

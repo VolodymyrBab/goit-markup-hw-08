@@ -1,0 +1,98 @@
+.hat__text {
+
+    width: 696px;
+
+    margin-left: auto;
+    margin-right: auto;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    @include font(900, 44px, 1.36);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-dark);
+
+}
+
+
+.detailes__h3 {
+    @include font(700, 14px, 1.14);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 30px;
+    color: var(--primary-text-color-theme-light);
+}
+
+.detailes__p {
+    padding-top: 10px;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.71;
+    @include font(400, 14px, 1.71);
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-title-color-theme-light);
+}
+
+.aktions__text,
+.command__text,
+.clients__text {
+    margin-bottom: 50px;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.16;
+    @include font(700, 36px, 1.16);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color-theme-light);
+}
+
+.aktions__p {
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    @include font(700, 14px, 1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 27px;
+    color: var(--primary-text-color-theme-dark);
+    background: rgba(47, 48, 58, 0.8);
+
+}
+
+.command-box__naime {
+
+    margin-bottom: 10px;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.18;
+    @include font(500, 16px, 1.18);
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color-theme-light);
+}
+
+.command-box__p {
+    margin-bottom: 16px;
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 1.18;
+    @include font(400, 16px, 1.18);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-title-color-theme-light);
+}

@@ -1,0 +1,42 @@
+.detailes__link {
+    @extend %align;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA
+}
+
+.clients__link {
+    @extend %align;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: border var(--trnsition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+        fill: var(--accent-color);
+    }
+}
+.social__list,
+.social-footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin: 0 auto;
+}
+
+.uslugi__list {
+    @extend %align;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2*30px)/3);
+    gap: 30px;
+}

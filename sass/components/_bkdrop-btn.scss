@@ -1,0 +1,28 @@
+.backdrop__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    outline: none;
+    @extend %align;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    
+}
+
+
+.backdrop__icon {
+    transition: fill var(--trnsition-dur-and-func);
+    fill: #000000;
+
+    .backdrop__button:hover &,
+    .backdrop__button:focus &{
+        fill: var(--accent-color);
+    }
+}
