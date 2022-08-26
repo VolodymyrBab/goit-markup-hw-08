@@ -1,0 +1,48 @@
+/ tel/
+main - 480x5457
+header - 480x60
+{ logo - 134x28{
+    mar.top/bot. - 16px
+    mrr.left - 15px
+    }
+  menu - 40x40{
+    mar.top/bot. - 10px
+    mrr.right - 15px
+    }
+}
+hate - 480x400{
+    div - 360x164{
+        h1{
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            /* or 162% */
+            color: #FFFFFF;
+            text-align: center;
+        }
+        button - 200x50{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 30px;
+            /* identical to box height, or 188% */
+        
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+        
+            color: #FFFFFF
+        }
+    }
+}
+
+osobennosti - 450x994
+komanda - 480x2761
+klients - 450x399
+footer - 480x603
+
+
+
+wqwqq
+
+(370x294 laptop; 354x294 tab; 450x294 tel) portfolio img

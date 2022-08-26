@@ -1,22 +1,39 @@
 .logo {
     font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    @include font(700, 26px, 1.19);
+    
+    @include font(700, 24px, 1.17);
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin-right: 93px;
-    margin-top: 24px;
-    margin-bottom: 25px;
+   
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo{
+        margin-right: 93px;
+        @include font(700, 26px, 1.19);
+    }
+    .logo__dark,
+    .logo__light {
+        
+        @include font(700, 26px, 1.19);
+    }
+
 }
 
 .logo__dark {
     font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    @include font(700, 26px, 1.19);
+   
+    @include font(700, 24px, 1.17);
 
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-dark);
@@ -24,10 +41,8 @@
 
 .logo__light {
     font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    @include font(700, 26px, 1.19);
+   
+    @include font(700, 24px, 1.17);
 
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-light);

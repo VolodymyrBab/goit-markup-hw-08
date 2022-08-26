@@ -1,37 +1,68 @@
-.menu {
-    display: flex;
-    width: 294px;
-    height: 80px;
-    padding-top: 32px;
-}
-.menu__link {
-    @include font(500, 14px, 1.14);
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-bottom: 28px;
-    color: var(--primary-text-color-theme-light);
-    transition: color var(--trnsition-dur-and-func);
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    } 
+    .mail-tel {
+        display: none;
+    }
+}
+.page-header_container{
+    @extend .align;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+            display: flex;
+            width: 294px;
+            height: 80px;
+            padding-top: 32px;
+        }
+    
+    .menu__link {
+        @include font(500, 14px, 1.14);
+        // font-weight: 500;
+        // font-size: 14px;
+        // line-height: 1.14;
+        letter-spacing: 0.02em;
+        padding-bottom: 28px;
+        color: var(--primary-text-color-theme-light);
+        transition: color var(--trnsition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    .menu__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    .mail-tel {
+        // @extend %align;
+        display: flex;
+        flex-direction: column;
+        // margin-left: auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    .mail-tel__item:not(:last-child) {
+        margin-right: 40px;
+    }
+    .mail-tel {
+        
+        flex-direction: row;
+        margin-left: auto;
     }
 }
 
-.menu__item {
-    display: flex;
-    flex-direction: column;
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
-}
-.mail-tel {
-    @extend %align;
-    margin-left: auto;
-}
 
-.mail-tel__item:not(:last-child) {
-    margin-right: 40px;
-}
+
