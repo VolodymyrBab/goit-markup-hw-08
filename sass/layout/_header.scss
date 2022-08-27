@@ -11,9 +11,6 @@
     .mail,
     .tel {
 
-        // font-weight: 500;
-        // font-size: 14px;
-        // line-height: 1.14;
         @include font(500, 14px, 1.14);
         letter-spacing: 0.02em;
 

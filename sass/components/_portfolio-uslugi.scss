@@ -10,7 +10,7 @@
 
 .uslugi__bg {
     transition: box-shadow var(--trnsition-dur-and-func);
-    width: 370px;
+    width: 450px;
 
     &:hover,
     &:focus {
@@ -76,3 +76,9 @@
     }
 }
 
+// .uslugi__list {
+//     @extend %align;
+//     flex-wrap: wrap;
+//     flex-basis: calc((100% - 2*30px)/3);
+//     gap: 30px;
+// }

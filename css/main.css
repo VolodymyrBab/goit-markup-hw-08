@@ -22,7 +22,7 @@
   clip: rect(0 0 0 0);
 }
 
-.subskrib-form__submit, .social-footer__link, .social__link, .uslugi__list, .clients__link, .detailes__link, .modal-form__submit, .backdrop__button, .uslugi-button__list, .hat__button {
+.subskrib-form__submit, .social-footer__link, .social__link, .clients__link, .detailes__link, .modal-form__submit, .backdrop__button, .hat__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@ button {
   text-decoration: none;
 }
 
-.align, .page-header_container {
+.align, .page-header_container, .uslugi-button__list {
   display: flex;
   align-items: center;
 }
@@ -248,9 +248,22 @@ body {
 }
 
 .uslugi-button__list {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
+.uslugi-button__item {
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .uslugi-button__list {
+    margin-bottom: 30px;
+  }
+  .uslugi-button__item {
+    padding-bottom: 0px;
+  }
+}
 .uslugi-button__item:not(:last-child) {
   padding-right: 8px;
 }
@@ -507,12 +520,6 @@ body {
   margin: 0 auto;
 }
 
-.uslugi__list {
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 60px) / 3);
-  gap: 30px;
-}
-
 .hat__text {
   width: 696px;
   margin-left: auto;
@@ -606,7 +613,7 @@ body {
 
 .uslugi__bg {
   transition: box-shadow var(--trnsition-dur-and-func);
-  width: 370px;
+  width: 450px;
 }
 .uslugi__bg:hover, .uslugi__bg:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -795,10 +802,16 @@ body {
 }
 .portfolio {
   background-color: #FFFFFF;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .section1 {
   padding-top: 200px;
   padding-bottom: 200px;
