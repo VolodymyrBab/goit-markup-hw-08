@@ -602,6 +602,11 @@ body {
   color: var(--primary-text-title-color-theme-light);
 }
 
+.uslugi__list {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .uslugi__box {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
@@ -612,16 +617,54 @@ body {
   padding-right: 24px;
 }
 
+.uslugi__bg {
+  transition: box-shadow var(--trnsition-dur-and-func);
+}
+.uslugi__bg:hover, .uslugi__bg:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.uslugi__box-overlay {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+
+.uslugi_picture {
+  height: 294px;
+}
+
 @media screen and (min-width: 480px) {
-  .uslugi__item:not(:last-child) {
-    padding-bottom: 30px;
-  }
-  .uslugi__bg {
-    transition: box-shadow var(--trnsition-dur-and-func);
+  .uslugi__bg,
+.uslugi_picture,
+.uslugi__box-overlay {
     width: 450px;
   }
-  .uslugi__bg:hover, .uslugi__bg:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .uslugi__bg,
+.uslugi_picture,
+.uslugi__box-overlay {
+    width: 354px;
+  }
+  .uslugi__list {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .uslugi_box1 {
+    height: 143px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .uslugi__bg,
+.uslugi_picture,
+.uslugi__box-overlay {
+    width: 370px;
+  }
+  .uslugi__list {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .uslugi_box1 {
+    height: 107px;
   }
 }
 .uslugi__naime {
@@ -638,13 +681,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-title-color-theme-light);
-}
-
-.uslugi__box-overlay {
-  position: relative;
-  overflow: hidden;
-  width: 450px;
-  height: 294px;
 }
 
 .uslugi__overlay {
@@ -669,12 +705,6 @@ body {
 }
 .uslugi__link:hover .uslugi__overlay, .uslugi__link:focus .uslugi__overlay {
   transform: translate(0, 0);
-}
-
-.uslugi__list {
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 60px) / 3);
-  gap: 30px;
 }
 
 .social__link {
