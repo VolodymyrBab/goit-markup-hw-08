@@ -1,11 +1,3 @@
-.subskrib-form {
-    display: flex;
-}
-
-.subskrib-form__field {
-    margin-right: 12px;
-}
-
 .subskrib-form__input {
     font-family: var(--primary-font);
     // font-weight: 400;
@@ -15,7 +7,7 @@
     color: var(--primary-text-color-theme-dark);
     letter-spacing: 0.03em;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 12px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -27,33 +19,80 @@
         color: rgba(255, 255, 255, 0.6);
     }
 }
-
-
-
-.subskrib-form__wrapper {
+.subskrib-form {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 
+.subskrib-form__field {
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
 .subskrib-form__submit {
+    @extend %align;
+    width: 200px;
+    height: 50px;
+    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
     padding-right: 29px;
 
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.88;
+    
     @include font(700, 16px, 1.88);
-    @extend %align;
+    
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     background-color: var(--accent-color);
     color: var(--primary-text-color-theme-dark);
+
+}
+
+@media screen and (min-width: 480px) {
+    .subskrib-form {
+        
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+   
     
 }
+
+@media screen and (min-width: 1200px) {
+    .subskrib-form__field {
+        margin-right: 12px;
+        margin-bottom: 0px;
+    }
+    .subskrib-form {
+
+        flex-direction: row;
+    }
+    .subskrib-form__input {
+        width: 358px;
+    }
+
+
+}
+
+
+
+.subskrib-form__wrapper {
+    display: flex;
+    position: relative;
+    
+}
+
+
 
 .subskrib-form__icon {
     margin-left: 10px;
