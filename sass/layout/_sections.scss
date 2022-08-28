@@ -3,11 +3,57 @@
     padding-bottom: 200px;
     background: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url("../image/section1/bak.jpg");
+        rgba(47, 48, 58, 0.4)), url("../image/mob/heat_mob_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+@media screen and (min-width: 480px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), url("../image/mob/heat_mob_1.jpg");
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+ screen and (min-resolution: 192dpi) and (min-width: 480px),
+ screen and (min-resolution: 2dppx) and (min-width: 480px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../image/mob/heat_mob_2.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url("../image/tab/heat_tab_1.jpg");
+        }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../image/tab/heat_tab_2.jpg");
+    }
+}
+@media screen and (min-width: 1200px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url("../image/laptop/section1/heat_lap_1.jpg");
+    }
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .section1 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../image/laptop/section1/heat_lap_2.jpg");
+    }
+}
+
+
 .section2,
 .section4,
 .section5 {
@@ -24,16 +70,7 @@
     background-color: #F5F4FA;
 }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
-}
 
-.detailes__item {
-    width: 270px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
 
 .aktions__item {
     position: relative;
@@ -66,5 +103,5 @@
     .section3{display:none;}
 }
 @media screen and (min-width: 1200px) {
-    
+   
 }
