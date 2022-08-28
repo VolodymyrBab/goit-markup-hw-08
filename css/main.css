@@ -1024,6 +1024,11 @@ body {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section3 {
+    display: none;
+  }
+}
 .adres__item {
   text-align: center;
 }
