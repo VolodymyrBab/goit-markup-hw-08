@@ -5,7 +5,8 @@
     background-color: #F5F4FA
 }
 .detailes__list,
-.clients__list{
+.clients__list,
+.command__list{
     @extend %align;
     flex-wrap: wrap;
     gap: 30px;
@@ -42,9 +43,20 @@
     width: 206px;
     margin: 0 auto;
 }
+.command_picture {
+    width: 450px;
+    height: 460px;
+
+}
+
+.command-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 @media screen and (min-width: 480px) {
-    .clients__list{
+    .clients__list,
+    .command__list{
         flex-basis: calc((100% - 30px)/2);
     }
     .clients__link {
@@ -53,7 +65,12 @@
     }
 }
 @media screen and (min-width: 768px) {
-    
+
+    .command_picture {
+        width: 354px;
+        height: 374px;
+
+    }
     .clients__list {
         flex-basis: calc((100% - 30px)/3);
     }
@@ -77,6 +94,11 @@
 
 
 @media screen and (min-width: 1200px) {
+    .command_picture {
+        width: 270px;
+        height: 260px;
+
+    }
     
     .detailes__item {
         width: 270px;
