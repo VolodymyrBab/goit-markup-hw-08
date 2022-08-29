@@ -1,6 +1,6 @@
 .section1 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url("../image/mob/heat_mob_1.jpg");
@@ -41,6 +41,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .section1 {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url("../image/laptop/section1/heat_lap_1.jpg");
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 
 }

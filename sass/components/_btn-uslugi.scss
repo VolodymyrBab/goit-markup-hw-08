@@ -34,7 +34,12 @@
 
 .uslugi-button__item {
     padding-bottom: 15px;
+    &:not(:last-child) {
+        padding-right: 8px;
+    }
+
 }
+
 @media screen and (min-width: 768px) {
     .uslugi-button__list {
         margin-bottom: 30px;
@@ -45,8 +50,9 @@
     }
    
 }
-.uslugi-button__item:not(:last-child) {
-    padding-right: 8px;
-    
+@media screen and (min-width: 768px) {
+    .uslugi-button__list {
+        margin-bottom: 50px;
+    }
 }
 

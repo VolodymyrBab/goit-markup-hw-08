@@ -16,7 +16,7 @@
 
 .detailes__h3 {
     @include font(700, 14px, 1.14);
-    
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 30px;
@@ -35,11 +35,9 @@
 .aktions__text,
 .command__text,
 .clients__text {
-    margin-bottom: 50px;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    @include font(700, 36px, 1.16);
+    margin-bottom: 30px;
+    
+    @include font(700, 28px, 1.18);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -97,16 +95,20 @@
     }
 }
 @media screen and (min-width: 768px) {
-
+    .detailes__h3 {
+        text-align:left;
+    }
 }
 @media screen and (min-width: 1200px) {
     .hat__text {
-    
         width: 696px;
-
         @include font(900, 44px, 1.36);
-       
-
+    }
+    .aktions__text,
+    .command__text,
+    .clients__text {
+        margin-bottom: 50px;
+        @include font(700, 36px, 1.16);
     }
 
 }
