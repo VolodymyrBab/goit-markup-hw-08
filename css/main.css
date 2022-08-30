@@ -165,7 +165,6 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    max-height: 796px;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -645,16 +644,22 @@ body {
   margin: 0 auto;
 }
 
-.command_picture {
-  width: 450px;
-  height: 460px;
-}
-
 .command-box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+.aktions__pic {
+  width: 370px;
+  height: 294px;
+}
+
+@media screen and (max-width: 480px) {
+  .command_picture {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__list,
 .command__list {
@@ -663,6 +668,10 @@ body {
   .clients__link {
     width: 210px;
     height: 92px;
+  }
+  .command_picture {
+    width: 450px;
+    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -833,17 +842,23 @@ body {
 .uslugi__box-overlay {
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 
-.uslugi_picture {
-  height: 294px;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .uslugi__bg,
 .uslugi_picture,
 .uslugi__box-overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .uslugi_picture,
+.uslugi__box-overlay {
+    width: 450px;
+    height: 294px;
+  }
+  .uslugi__bg {
     width: 450px;
   }
 }

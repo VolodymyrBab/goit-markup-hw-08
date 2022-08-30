@@ -29,23 +29,31 @@
 .uslugi__box-overlay {
     position: relative;
     overflow: hidden;
-    height: 294px;
     
-}
-.uslugi_picture{
-    height: 294px;
-  
+    
 }
 
-@media screen and (min-width: 480px) {
-    
+@media screen and (max-width: 480px) {
+
     .uslugi__bg,
     .uslugi_picture,
     .uslugi__box-overlay {
-        width: 450px;
-
+        width: 100%;
+        height: 100%
     }
+
+}
+@media screen and (min-width: 480px) {
     
+    
+    .uslugi_picture,
+    .uslugi__box-overlay {
+        width: 450px;
+        height: 294px;
+    }
+    .uslugi__bg{
+        width: 450px;
+    }
 }
  
 @media screen and (min-width: 768px){
@@ -53,7 +61,7 @@
     .uslugi_picture,
     .uslugi__box-overlay {
         width: 354px;
-
+        
     }
     .uslugi__list {
         flex-basis: calc((100% - 30px)/2);
